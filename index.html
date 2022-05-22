@@ -110,10 +110,51 @@
         <p>
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <input type="email" placeholder="example@.com" />
-        <button type="button">Подписаться</button>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <label for="newsletter-email"></label>
+          <input type="email" placeholder="example@.com" />
+          <button
+            class="button news-letter"
+            type="submit"
+            name="newsletter-email"
+            id="newsletter-email"
+          >
+            Подписаться
+          </button>
+        </form>
       </section>
-      <footer></footer>
+      <footer class="page-footer">
+        <h2 class="visually-hidden">Контакты</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">VK</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
+        <section>
+          <address>
+            <a class="page-footer-address-phone">+7 (812) 812-12-12</a>
+          </address>
+        </section>
+        <section>
+          <img
+            class="footer-contacts-logo"
+            src="#"
+            alt="Логотип html academy"
+          />
+        </section>
+      </footer>
     </main>
   </body>
 </html>
