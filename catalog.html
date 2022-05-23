@@ -50,7 +50,7 @@
            <a class="breadcrumbs-link" href="index.html">Главная</a>
          </li>
          <li class="breadcrumbs-item" >
-           <a class="breadcrumbs-link" href="#">Гостиницы</a>
+           <a class="breadcrumbs-link">Гостиницы</a>
          </li>
        </ul>
 
@@ -62,26 +62,50 @@
           <fieldset class="catalog-filter-group">
            <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
-              <li>
+              <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" checked>
+                  <input class="control-input" type="checkbox" name="Бассейн" checked>
                   Бассейн
                 </label>
               </li>
-              <li>
+              <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" checked>
+                  <input class="control-input" type="checkbox" name="Парковка" checked>
                   Парковка
                 </label>
               </li>
-              <li>
+              <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox">
+                  <input class="control-input" type="checkbox" name="Wi-Fi">
                   Wi-Fi
                 </label>
               </li>
             </ul>
           </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип жилья:</legend>
+             <ul class="catalog-filter-list">
+               <li class="catalog-filter-item">
+                 <label class="control">
+                   <input class="control-input" type="radio" name="housing-type" checked>
+                   Гостиница
+                 </label>
+               </li>
+               <li class="catalog-filter-item">
+                 <label class="control">
+                   <input class="control-input" type="radio" name="housing-type">
+                   Мотель
+                 </label>
+               </li>
+               <li class="catalog-filter-item">
+                 <label class="control">
+                   <input class="control-input" type="radio" name="housing-type">
+                   Апартаменты
+                 </label>
+               </li>
+             </ul>
+           </fieldset>
 
          </form>
        </section>
