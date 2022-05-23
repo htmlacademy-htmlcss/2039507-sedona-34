@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>catalog Седона</title>
   </head>
+
   <body>
     <header class="page-header">
       <a>
@@ -48,13 +49,42 @@
          <li class="breadcrumbs-item">
            <a class="breadcrumbs-link" href="index.html">Главная</a>
          </li>
-         <li class="breadcrumbs-item">
-           <a class="breadcrumbs-link" href="#">Каталог</a>
-         </li>
-         <li class="breadcrumbs-item" href="#">
-           <span>Гостиницы</span>
+         <li class="breadcrumbs-item" >
+           <a class="breadcrumbs-link" href="#">Гостиницы</a>
          </li>
        </ul>
+
+       <section>
+         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" 
+         method="get">
+          
+          <fieldset class="catalog-filter-group">
+           <legend class="catalog-filter-title">Инфраструктура:</legend>
+            <ul class="catalog-filter-list">
+              <li>
+                <label class="control">
+                  <input class="control-input" type="checkbox" checked>
+                  Бассейн
+                </label>
+              </li>
+              <li>
+                <label class="control">
+                  <input class="control-input" type="checkbox" checked>
+                  Парковка
+                </label>
+              </li>
+              <li>
+                <label class="control">
+                  <input class="control-input" type="checkbox">
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+         </form>
+       </section>
      </header>
     </main>
   </body>
