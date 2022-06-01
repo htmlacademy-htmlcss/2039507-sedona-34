@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("styles/PT_Sans.woff2") format: ("woff2");
+       url("styles/PT_Sans.woff") format: ("woff");
+}
+
+@font-face {
+font-family: "PT Sans", "Arial", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-display: swap;
+src: url("styles/PT_Sans.woff2") format: ("woff2");
+     url("styles/PT_Sans.woff") format: ("woff");
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    background: #FFFFFF;
+}
+
+button {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    Line-height: 97%;
+    text-align: Center;
+    vertical-align: Center;
+    text-transform: uppercase;
+    background: #756157;
+    color: #FFFFFF;
+}
+
+.news-letter {
+    background: #82B3D3;
+    color: #FFFFFF;
+}
+
+.navigation-link {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+
+.main-index {
+    background-image: url("images/index/greeting/background-image.jpg");
+    background-size: 100% 0;
+    background-repeat: no-repeat;
+}
+
+.description-advantages {
+    font-family: "PT Sans", sans-serif;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 96%;
+    text-align: Center;
+    vertical-align: Top;
+}
+
+.advantages-list {
+    font-family: "PT Sans";
+    font-style: "Regular";
+    font-size: 22px;
+    line-height: 26px;
+    line-height: 91%;
+    text-align: Center;
+    vertical-align: Top;
+}
+
+li {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    
+}
+
+.search-hotel {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+}
+
+.subscribe {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    background-image: url("images/index/subscribe-background.jpg");
+}
+
+
