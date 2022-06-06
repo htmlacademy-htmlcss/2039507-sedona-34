@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
   <body>
@@ -49,7 +49,7 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">кнопка "Хочу сюда! </span>
-              <button type="button">Хочу сюда!</button>
+              <button type="button" class="button">Хочу сюда!</button>
             </a>
           </li>
         </ul>
@@ -59,14 +59,10 @@
     <main class="main-index">
       <section class="greeting">
         <h1 class="visually-hidden">Sedona</h1>
+        <img src="images/index/background-image.jpg" width: 1200px; height:
+        485px; alt="Sedona" />
         <img
-          src="images/index/greeting/background-image.jpg"
-          width="1200"
-          height="485"
-          alt="image-background"
-        />
-        <img
-          src="images/index/greeting/welcome.svg"
+          src="images/index/welcome.svg"
           width="458"
           height="352"
           alt="welcome to Sedona"
@@ -74,14 +70,17 @@
       </section>
 
       <section class="description-advantages">
-        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2>
+          Седона — небольшой городок в Аризоне,<br />
+          заслуживающий большего!
+        </h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
 
       <section class="advantages">
         <ol class="advantages-list">
           <li>
-            <div>
+            <div class="block">
               <h3>Настоящий городок</h3>
               <span>— №1 —</span>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -95,47 +94,53 @@
               />
             </div>
             <ul>
-              <li>
+              <li class="housing">
                 <h3>Жильё</h3>
-                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="recommendation">
+                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                </p>
               </li>
-              <li>
+              <li class="food">
                 <h3>Еда</h3>
-                <p>
+                <p class="recommendation">
                   Всегда заказывайте топовый фирменный бургер, вы не
                   разочаруетесь!
                 </p>
               </li>
-              <li>
+              <li class="souvenirs">
                 <h3>Сувениры</h3>
-                <p>
+                <p class="recommendation">
                   Не только китайского, но и настоящего местного производства!
                 </p>
               </li>
             </ul>
           </li>
-          <li>
-            <h3>Там есть мост дьявола</h3>
-            <span>— №2 —</span>
-            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img
-              src="images/index/list-photo-2.jpg"
-              width="800"
-              height="384"
-              alt="view bridge of death"
-            />
+          <li class="bridge">
+            <div>
+              <h3>Там есть мост дьявола</h3>
+              <span>— №2 —</span>
+              <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
+            <div>
+              <img
+                src="images/index/list-photo-2.jpg"
+                width="800"
+                height="384"
+                alt="view bridge of death"
+              />
+            </div>
           </li>
-          <li>
+          <li class="square">
             <h3>Небольшая площадь</h3>
             <span>— №3 —</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li>
+          <li class="road">
             <h3>Красивая дорога</h3>
             <span>— №4 —</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li>
+          <li class="tourists">
             <h3>Мало туристов</h3>
             <span>— №5 —</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -149,7 +154,9 @@
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
-        <button class="button">Поиск гостиницы в седоне</button>
+        <a href="catalog.html">
+          <button class="button-search">Поиск гостиницы в седоне</button>
+        </a>
       </section>
 
       <section class="subscribe">
