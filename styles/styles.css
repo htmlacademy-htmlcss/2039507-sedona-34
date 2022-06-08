@@ -19,34 +19,54 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
-    color: black;
-    background-color: #FFFFFF;
+    font-weight: 400;
+    color: #000;
+    background-color: #fff;
 }
 
-button {
+.button-push {
     width: 160px;
     height: 37px;
     font-size: 16px;
+    font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
-    color:  white;
+    color:  #fff;
     background-color: #756157;
 }
 
-.page-header {
+.button-search {
+    width: 574px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #756157;
+}
+
+.button-news-letter {
+    width: 200px;
+    height: 60px;
     font-weight: 700;
     font-size: 20px;
-    color: black;
-    background-color: #FFFFFF;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #82B3D3;
+}
+.page-header {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
 }
 
 .navigation-link {
-    font-family: "PT Sans", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
     line-height: 26px;
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
 .main-index {
@@ -54,8 +74,7 @@ button {
     background-color: #ffffff;
 }
 
-.description-advantages {
-    font-style: normal;
+.description-advantages  {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -63,17 +82,40 @@ button {
 }
 
 .description-advantages h2 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
     margin-bottom: 31px;
+    text-transform: uppercase;
 }
 
 .description-advantages p {
-    font-weight: 400;
     font-size: 22px;
     line-height: 26px;
     margin-bottom: 90px;
+}
+
+.advantages {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.advantages-item-houses,
+.advantages-item-souvenirs,
+.advantages-item-square,
+.advantages-item-tourists {
+    width: 400px;
+    height: 384px;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-food {
+    width: 400px;
+    height: 384px;
+}
+
+.advantages-item-road {
+    width: 400px;
+    height: 384px;
+    background-color: rgba(131, 179, 211, 0.2);
 }
 
 
@@ -81,43 +123,109 @@ button {
     width: 400px;
     height: 384px;
     background-color: #82B3D3;
-    color: #ffffff;
-    vertical-align: center;
 }
 
-.housing,
-.souvenirs,
-.square,
-.tourists {
-    background: rgba(131, 179, 211, 0.12);
+.advantages-unordered-list h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+
+.recommendation {
+    text-align: center;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.block {
     width: 400px;
     height: 384px;
-
+    color: #fff;
+    text-align: center;
 
 }
-
-.road { 
+.block-2 {
     width: 400px;
     height: 384px;
-    background: rgba(131, 179, 211, 0.2);
+    color: #fff;
+    background-color: #82B3D3;
+    text-align: center;
 }
 
-.food {
-    width: 400px;
-    height: 384px;
+.page-footer-address-phone {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #000;
 }
 
-.bridge {
-    width: 400px;
-    height: 384px;
-    background: #82B3D3;
+.main-inner {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
 }
 
-.square {
-    width: 400px;
-    height: 384px;
-
+.inner-header {
+    font-size: 20px;
+    line-height: 26px;
 }
 
+.inner-header-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+}
 
+.breadcrumbs-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.breadcrumbs-link-main {
+    text-decoration: none;
+    color: #000;
+}
+
+.catalog-products {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.catalog-filter-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.button-accept {
+    width: 160px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #82B3D3;
+}
+
+.product-card {
+    width: 340px;
+    height: 438px;
+}
+
+.product-card-link,
+.pagination-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.product-card-button-details,
+.product-card-button-chosen {
+    text-decoration: none;
+    color: #000;
+}
 
