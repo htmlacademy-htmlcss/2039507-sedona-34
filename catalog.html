@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>catalog Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -45,15 +46,16 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden"> Кнопка "Хочу сюда" </span>
-              <button type="button">Хочу сюда!</button>
+              <button type="button" class="button-push">Хочу сюда!</button>
         </ul>
-
+    </header>
     <main class="main-inner">
      <header>
-       <h1 class="inner-header-title">Гостиницы Седоны</h1>
-       <ul class="breadcrumbs">
+       <img class="catalog-background-img" src="images/catalog/catalog-background.jpg">
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
          <li class="breadcrumbs-item">
-           <a class="breadcrumbs-link" href="index.html">Главная</a>
+           <a class="breadcrumbs-link-main" href="index.html">Главная</a>
          </li>
          <li class="breadcrumbs-item" >
            <a class="breadcrumbs-link">Гостиницы</a>
@@ -112,7 +114,10 @@
                </li>
              </ul>
             </fieldset>
-         </form>
+            <button type="button" class="button-accept">Применить</button>
+            <button type="button" class="button-throw-off">Сбросить</button>
+          </form>
+          <h2>Найдено гостиниц: 38</h2>
 
          <select class="select-control">
            <option value="popular">Сначала дешёвые</option>
@@ -285,9 +290,6 @@
           </footer>
 
         </section>
-     </header>
-
-     
     </main>
   </body>
 </html>
