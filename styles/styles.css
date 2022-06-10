@@ -63,6 +63,20 @@ body {
     background-color: #fff;
 }
 
+.greeting {
+    width: 1200;
+    height: 485px;
+    background-image: url("../images/index/background-image.jpg");
+    background-repeat: no-repeat;
+}
+
+.greetining-image {
+    width: 485px;
+    height: 352px;
+    background-image: url("../images/index/welcome.svg");
+    background-repeat: no-repeat;
+}
+
 .navigation-link {
     line-height: 26px;
     text-decoration: none;
@@ -165,17 +179,29 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+    color: #fff;
 }
 
-.inner-header {
+.catalog-header {
+    width: 1200px;
+    height: 400px;
+    background-image: url("../images/catalog/catalog-background.jpg");
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.inner-body {
     font-size: 20px;
     line-height: 26px;
+    color: #fff;
 }
 
-.inner-header-title {
+.inner-header-title  {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
+    color: #fff;
+  
 }
 
 .breadcrumbs-item {
@@ -186,7 +212,7 @@ body {
 
 .breadcrumbs-link-main {
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 .catalog-products {
