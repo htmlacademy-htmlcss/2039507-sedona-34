@@ -69,10 +69,18 @@ body {
     background-color: #82B3D3;
     border-radius: 0px 10px 10px 0px;
 }
+
+/* index.html  */
+
 .page-header {
     font-size: 20px;
     color: #000;
     background-color: #fff;
+}
+
+.page-header-logo {
+  height: 70px;
+  margin-right: 30px;
 }
 
 .greeting {
@@ -89,6 +97,8 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+/* index-navigation */
 
 .navigation {
     display: flex;
@@ -109,11 +119,6 @@ body {
     margin-left: auto;
 }
 
-.page-header-logo {
-    height: 70px;
-    margin-right: 30px;
-}
-
 .navigation-list {
     width: 390px;
 }
@@ -123,6 +128,8 @@ body {
     text-decoration: none;
     color: #000;
 }
+
+/* index-main */
 
 .main-container {
     flex-grow: 1;
@@ -141,7 +148,6 @@ body {
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
     padding: 0;
 }
 
@@ -162,12 +168,20 @@ body {
     display: flex;
 }
 
+.first-block-image {
+  display: block;
+}
+
 .first-block p {
     margin-bottom: 0;
 }
 
 .second-block {
     display: flex;
+}
+
+.second-block-image {
+    display: block;
 }
 
 .third-block {
@@ -182,10 +196,13 @@ body {
 }
 
 .wrapper-item {
-    padding: 80px 85px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
+    padding-top: 103px;
+    padding-bottom: 102px;
+
 }
 
 .wrapper-item-end {
@@ -208,10 +225,9 @@ body {
     text-transform: uppercase;
 }
 
-.description-advantages p {
+.advantages-paragraph {
     font-size: 22px;
     line-height: 26px;
-    margin-bottom: 90px;
 }
 
 .advantages {
@@ -223,7 +239,7 @@ body {
 .advantages-unordered-list-item {
     width: 100%;
     background-color: rgba(131, 179, 211, 0.12);
-    
+
 }
 
 .advantages-unordered-list-item:nth-child(2) {
@@ -247,6 +263,8 @@ body {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
+/* search-hotel */
+
 .search-hotel {
     width: 1200px;
     height: 417px;
@@ -255,6 +273,8 @@ body {
     align-items: center;
     padding-top: 91px;
 }
+
+/* subscribe */
 
 .subscribe {
     display: flex;
@@ -265,9 +285,6 @@ body {
     color:#fff;
     background-image: url(../images/index/subscribe-background.jpg);
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 94px;
 }
 
@@ -275,7 +292,7 @@ body {
     width:600px;
     height: 60px;
     border-radius: 10px 0 0 10px;
-    
+
 }
 
 .header {
@@ -285,45 +302,17 @@ body {
     text-transform: uppercase;
 }
 
-.header a {
+.subscribe-header a {
     margin-top: 56px;
 }
 
-.page-footer-container {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.footer-social-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.footer-contacts {
-    width: 142px;
-}
-
-.footer-logo {
-    width: 115px;
-}
-
-.page-footer-address-phone {
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 40px;
-    text-decoration: none;
-    color: #000;
-}
+/* catalog  */
 
 .main-inner {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 26px;
     color: #fff;
 }
 
@@ -358,6 +347,8 @@ body {
     line-height: 78px;
 }
 
+/* filter */
+
 .inner-filter {
     display:flex;
     flex-direction: column;
@@ -370,9 +361,15 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    
-   
 }
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+/* breadcrumbs */
 
 .breadcrumbs-item {
     font-weight: 400;
@@ -390,9 +387,7 @@ body {
     align-items: baseline;
 }
 
-.pagination-select-control {
-    width: 290px;
-}
+/* catalog */
 
 .catalog-products {
     font-weight: 400;
@@ -439,6 +434,10 @@ body {
     color: #000;
 }
 
+.pagination-select-control {
+  width: 290px;
+}
+
 .subscribe-catalog {
     display: flex;
     flex-direction: column;
@@ -447,10 +446,36 @@ body {
     height: 411px;
     color: #000;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 94px;
 }
+/* footer */
 
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+.footer-social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-contacts {
+  width: 142px;
+}
+
+.footer-logo {
+  width: 115px;
+}
+
+.page-footer-address-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000;
+}
