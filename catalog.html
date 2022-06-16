@@ -55,7 +55,7 @@
           </nav>
         </header>
 
-        <section class="catalog-products">
+        <section class="catalog">
           <div class="inner-filter">
             <h1 class="headind">Гостиницы Седоны</h1>
             <h2 class="visually-hidden" hidden>Список гостиниц с фильтрами</h2>
@@ -63,8 +63,7 @@
               <form
                 class="catalog-filter"
                 action="https://echo.htmlacademy.ru/"
-                method="get"
-              >
+                method="get">
                 <div class="filter-left-group">
                   <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">
@@ -146,28 +145,29 @@
                   <button type="reset" class="button-throw-off">
                     Сбросить
                   </button>
-                </div>
               </form>
             </div>
-
-            <div class="sorting"></div>
-            <h2>Найдено гостиниц: 38</h2>
-            <select class="select-control">
-              <option value="popular">Сначала дешёвые</option>
-            </select>
-            <a href="#" class="button button-light">
-              <span class="visially-hidden">Показать таблицу</span>
-            </a>
-            <a href="#" class="button button-light">
-              <span class="visially-hidden">Показать карточку</span>
-            </a>
-            <a href="#" class="button button-light">
-              <span class="visially-hidden">Показать список</span>
-            </a>
           </div>
 
-          <div class="catalog">
-            <ul>
+          <div class="catalog-products">
+
+            <div class="sorting">
+              <h2>Найдено гостиниц: 38</h2>
+              <select class="select-control">
+                <option value="popular">Сначала дешёвые</option>
+              </select>
+              <a href="#" class="button button-light">
+                <span class="visially-hidden">Показать таблицу</span>
+              </a>
+              <a href="#" class="button button-light">
+                <span class="visially-hidden">Показать карточку</span>
+              </a>
+              <a href="#" class="button button-light">
+                <span class="visially-hidden">Показать список</span>
+              </a>
+            </div>
+
+            <ul class="catalog-unordered-list">
               <li class="product-card-item">
                 <a class="product-card-link" href="product.html">
                   <img
@@ -310,27 +310,29 @@
 
           <footer class="page-footer">
             <div class="page-footer-container">
-              <h2 class="visually-hidden">Контакты</h2>
-              <ul class="footer-social-list">
-                <li class="footer-social-item">
-                  <a class="button" href="#">
-                    <span class="visually-hidden">VK</span>
-                    <img src="images/footer/vk.svg" alt="vk logo" />
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a class="button" href="#">
-                    <span class="visually-hidden">Telegram</span>
-                    <img src="images/footer/telegram.svg" alt="telegram logo" />
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a class="button" href="#">
-                    <span class="visually-hidden">YouTube</span>
-                    <img src="images/footer/youtube.svg" alt="youtube logo" />
-                  </a>
-                </li>
-              </ul>
+              <section class="footer-contacts">
+                <h2 class="visually-hidden">Контакты</h2>
+                <ul class="footer-social-list">
+                  <li class="footer-social-item">
+                    <a class="button" href="#">
+                      <span class="visually-hidden">VK</span>
+                      <img src="images/footer/vk.svg" alt="vk logo" />
+                    </a>
+                  </li>
+                  <li class="footer-social-item">
+                    <a class="button" href="#">
+                      <span class="visually-hidden">Telegram</span>
+                      <img src="images/footer/telegram.svg" alt="telegram logo" />
+                    </a>
+                  </li>
+                  <li class="footer-social-item">
+                    <a class="button" href="#">
+                      <span class="visually-hidden">YouTube</span>
+                      <img src="images/footer/youtube.svg" alt="youtube logo" />
+                    </a>
+                  </li>
+                </ul>
+              </section>
               <section class="phone">
                 <address>
                   <a
