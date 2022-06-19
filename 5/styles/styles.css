@@ -31,6 +31,17 @@ body {
     background-color: #fff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+/* Button */
 .button-push {
     width: 160px;
     height: 37px;
@@ -73,31 +84,15 @@ body {
     background-color: #fff;
 }
 
+/* index-navigation */
+
 .page-header-logo {
+  margin-left: 70px;
   margin-right: 30px;
 }
 
-.greeting {
-    width: 100%;
-    height: 485px;
-    background-image: url("../images/index/background-image.jpg");
-    background-repeat: no-repeat;
-    margin: 0;
-}
-
-.greeting-image {
-    height: 352px;
-    background-repeat: no-repeat;
-    display: block;
-    margin: 0 auto;
-}
-
-/* index-navigation */
-
 .navigation {
     display: flex;
-    width: 1060px;
-    margin: 0 auto;
     font-weight: 700;
 }
 
@@ -105,6 +100,7 @@ body {
     margin: 0;
     padding: 0;
     width: 390px;
+    list-style-type: none;
 }
 
 .navigation-user {
@@ -112,6 +108,7 @@ body {
     padding: 0;
     max-width: 264px;
     margin-left: auto;
+    list-style-type: none;
 }
 
 .navigation-link {
@@ -136,6 +133,21 @@ body {
     flex-grow: 1;
 }
 
+.greeting {
+  width: 100%;
+  height: 485px;
+  background-image: url("../images/index/background-image.jpg");
+  background-repeat: no-repeat;
+}
+
+.greeting-image {
+  height: 352px;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+  padding-top: 51px;
+}
+
 .page-container {
     margin: 0 auto;
 }
@@ -145,7 +157,7 @@ body {
     flex-wrap: wrap;
     padding: 0;
     align-items: stretch;
-    width: 100%;
+    list-style-type: none;
 }
 
 .block {
@@ -185,7 +197,7 @@ body {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-
+    list-style-type: none;
 }
 
 .wrapper-item {
@@ -240,6 +252,7 @@ body {
 .advantages-unordered-list-item {
     width: 33%;
     background-color: rgba(131, 179, 211, 0.12);
+    flex-grow: 1;
 }
 
 .advantages-unordered-list-item:nth-child(2) {
@@ -288,7 +301,7 @@ body {
 
 }
 
-.header {
+.subscribe-title {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -308,7 +321,7 @@ body {
     line-height: 26px;
 }
 
-.catalog {
+.filter {
     display: flex;
     flex-direction: column;
     background-image: url("../images/catalog/catalog-background.jpg");
@@ -325,27 +338,38 @@ body {
     color: #fff;
 }
 
-.headind {
-    margin:0;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 78px;
-}
 
 /* filter */
 
-.inner-filter {
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 71px;
-    margin-left: 70px;
+
+.catalog-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #fff;
+  padding-left: 70px;
+  padding-top: 35px;
+  margin:0;
 }
 
-.filter-left-group {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+.breadcrumbs {
+  display: flex;
+  margin-top: 10px;
+  padding-left: 70px;
+  list-style-type: none;
+}
+
+.breadcrumbs-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumbs-link-main {
+  text-decoration: none;
+  color: #fff;
 }
 
 .catalog-filter-title {
@@ -354,43 +378,46 @@ body {
   line-height: 26px;
 }
 
-/* breadcrumbs */
-
-.breadcrumbs-item {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
+.filter-left-group {
+  display: flex;
+  margin: 0;
+}
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 70px;
+  list-style-type: none;
 }
 
-.breadcrumbs-link-main {
-    text-decoration: none;
-    color: #fff;
-}
-
-
+/* catalog */
 
 .sorting {
     display: flex;
-    align-items: baseline;
-    margin-top: 132px;
-    margin-bottom: 60px;
+    align-items: space-around;
     color:#000;
-
+    margin-top: 50px;
+    margin-left: 70px;
 }
 
+.sorting-title {
+  margin-right: 191px;
+}
+
+.sorting-view {
+  display: flex;
+  margin-left: 78px;
+}
+
+.select-control {
+  width: 290px;
+  height: 49px;
+}
 
 .catalog-unordered-list {
-    margin-top: 80px;
     font-size: 18px;
     line-height: 21px;
     display: flex;
     flex-wrap: wrap;
-}
-
-.catalog-filter-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
 }
 
 .button-accept {
@@ -403,7 +430,6 @@ body {
     color: #fff;
     background-color: #82B3D3;
 }
-
 
 .product-card-item {
     width: 340px;
