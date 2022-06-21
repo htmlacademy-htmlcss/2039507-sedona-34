@@ -52,10 +52,9 @@
         </nav>
       </header>
 
-      <main class="main-inner main-container">
-        <div class="page-container">
-          <!--Фильтр-->
-
+      <main class="main-inner">
+        <!--Фильтр-->
+        <div class="filter-content">
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -148,22 +147,27 @@
               <button class="button" type="reset">Сбросить</button>
             </form>
           </section>
+        </div>
 
-          <!--Сортировка-->
-          <div class="sorting">
+        <!--Сортировка-->
+        <div class="catalog">
+          <div class="sorting-container">
             <h3 class="sorting-title">Найдено гостиниц: 38</h3>
             <select class="select-control" aria-label="Сортировка">
-              <option value="popular">Сначала популярное</option>
-              <option value="cheap">Сначала дешёвое</option>
-              <option value="expensive">Сначала дорогое</option>
+              <option value="popular">Сначала дешёвые</option>
+              <option value="cheap">Сначала популярные</option>
+              <option value="expensive">Сначала дорогие</option>
             </select>
-            <a href="#" class="button button-light">
+
+            <a class="button button-view" href="#">
               <span class="visually-hidden">Показать таблицу</span>
             </a>
-            <a href="#" class="button button-light">
+
+            <a class="button button-view" href="#">
               <span class="visually-hidden">Показать слайдшоу</span>
             </a>
-            <a href="#" class="button button-light">
+
+            <a class="button button-view" href="#">
               <span class="visually-hidden">Показать список</span>
             </a>
           </div>
@@ -236,58 +240,62 @@
             </li>
           </ul>
           <!--Пагинация-->
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link">...</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link">10</a>
-            </li>
-          </ul>
-          <label class="quantity">Гостиниц на странице:</label>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-
-          <!--Подпишись-->
-          <section class="subscribe-inner">
-            <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-            <p>
-              Только полезная информация и никакого спама, честное бойскаутское!
-            </p>
-            <form action="https://echo.htmlacademy.ru/" method="post">
-              <label for="newsletter-email"></label>
-              <input
-                class="subscribe-form"
-                type="email"
-                placeholder="example@.com"
-              />
-              <button
-                class="button-news-letter"
-                type="submit"
-                name="newsletter-email"
-                id="newsletter-email"
-              >
-                Подписаться
-              </button>
-            </form>
-          </section>
+          <div class="pagination-container">
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link">...</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link">10</a>
+              </li>
+            </ul>
+            <div class="paginatiion-select">
+              <label class="quantity">Гостиниц на странице</label>
+              <select class="select-control" aria-label="Сортировка">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
         </div>
+
+        <!--Подпишись-->
+        <section class="subscribe-inner">
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+          <p>
+            Только полезная информация и никакого спама, честное бойскаутское!
+          </p>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <label for="newsletter-email"></label>
+            <input
+              class="subscribe-form"
+              type="email"
+              placeholder="example@.com"
+            />
+            <button
+              class="button-news-letter"
+              type="submit"
+              name="newsletter-email"
+              id="newsletter-email"
+            >
+              Подписаться
+            </button>
+          </form>
+        </section>
       </main>
 
       <!--Подвал-->
