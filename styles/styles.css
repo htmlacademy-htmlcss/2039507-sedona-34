@@ -63,6 +63,7 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     background-color: #756157;
+    border-radius: 4px;
 }
 
 .button-news-letter {
@@ -428,7 +429,7 @@ body {
 
 .sorting-container {
   display:flex;
-  justify-content: space-around;
+  justify-content:;
   align-items: flex-end;
   margin: 55px 72px;
 }
@@ -470,7 +471,9 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  padding-left: 73px;
   list-style-type: none;
+  justify-content: flex-start;
 }
 
 .product-card {
@@ -478,10 +481,9 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   padding: 20px;
-  justify-content: center;
 }
 
-.product-card:not(:last-child) {
+.product-card:not(:nth-child(3n)) {
   margin-right: 18px;
 }
 
@@ -493,8 +495,26 @@ body {
   color: #000;
 }
 
+.rating {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #E5E5E5;
+  border-radius: 4px;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.product-card-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .product-description,
-.product-price {
+.product-price,
+.stars,
+.rating {
   color: #000;
 }
 
@@ -503,13 +523,28 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  padding: 8px 15px;
   text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+}
+
+.detailed {
+  background: #756157;
+  margin-right: 20px;
+}
+
+.to-favourites {
+  background: #82B3D3;
 }
 
 /* pagination */
 .pagination-container {
   display: flex;
   margin-top: 96px;
+  padding-left: 73px;
 }
 
 .pagination {
@@ -549,13 +584,20 @@ body {
   padding-top: 12px;
 }
 
-.paginatiion-select{
+.pagination-select{
   display: flex;
-  justify-content: center;
+  margin: auto;
+  align-items: baseline;
   color:#000;
-  margin-left: 270px;
-  padding-right: 51px;
 }
+
+.select-control-pagination {
+  width: 160px;
+  height: 49px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
 
 /* subscribe */
 .subscribe-inner {
@@ -573,6 +615,8 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-top: 45px;
+  padding-bottom: 35px;
 }
 
 .footer-social-list {
