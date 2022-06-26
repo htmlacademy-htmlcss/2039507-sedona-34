@@ -76,6 +76,26 @@ body {
     border-radius: 0 10px 10px 0;
     border: 0;
     padding: 12px 15px;
+
+}
+
+.button-accept {
+  width: 160px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #82B3D3;
+  border: 0;
+  border-radius: 4px;
+}
+
+.button-throw-off {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 /* index.html  */
@@ -494,9 +514,10 @@ body {
 
 .product-card {
   display:flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   padding: 20px;
+  max-width: 300px;
+
 }
 
 .product-card:not(:nth-child(3n)) {
@@ -525,6 +546,7 @@ body {
 .product-card-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: auto;
 }
 
 .product-description,
