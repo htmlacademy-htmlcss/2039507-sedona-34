@@ -200,7 +200,8 @@ body {
   display: block;
 }
 
-.block {
+.block-1,
+.block-2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -210,36 +211,33 @@ body {
     text-align: center;
 }
 
-.block h3,
-.block-2 h3,
+.first-block h3,
+.second-block h3,
 .advantages-title {
     margin: 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .second-block {
-  display: flex;
+    display: flex;
+    color: #fff;
+    background-color: #82B3D3;
 }
 
 .block-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 92px 85px;
-    color: #fff;
-    background-color: #82B3D3;
-    text-align: center;
-    order: 2;
+  order: 2;
 }
 
-.second-block-image {
-    display: block;
+.bridge-image {
+  display: block;
 }
 
-.advantages-unordered-list {
+.advantages-unordered-list,
+.last-block {
   margin: 0;
   padding: 0;
   display: flex;
@@ -250,6 +248,10 @@ body {
 .advantages-unordered-list-item {
   background-color: rgba(131, 179, 211, 0.12);
   width: 33%;
+}
+
+.last-block .advantages-unordered-list-item:nth-child(2) {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .wrapper-item {
@@ -271,6 +273,7 @@ body {
   margin-top: 30px;
 }
 
+
 .advantages-paragraph {
   font-weight: 400;
   font-size: 18px;
@@ -279,26 +282,21 @@ body {
   margin-top: 30px;
 }
 
-
-.wrapper-item-end {
+.last-block {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 103px 85px;
 }
 
-.wrapper-item-end span {
-  padding-top: 30px;
-}
-
-.road-item {
-  background: rgba(131, 179, 211, 0.2);
+.last-block h3:nth-of-type(1) {
+  margin-bottom: 30px;
 }
 
 .advantages-unordered-list-item {
+    display: flex;
+    flex-direction: column;
     width: 33%;
     background-color: rgba(131, 179, 211, 0.12);
+    justify-content: center;
+    text-align: center;
     flex-grow: 1;
 }
 
@@ -425,12 +423,25 @@ body {
   display: flex;
 }
 
+.catalog-filter-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+/* sorting */
+
 .catalog {
   display: flex;
   flex-direction: column;
 }
-
-/* sorting */
 
 .sorting-container {
   display:flex;
