@@ -135,7 +135,7 @@ body {
   border: 0;
   border-radius: 4px;
   margin-left: auto;
-  margin-right: 70px;
+  margin-top: 55px;
 }
 
 .button-accept:hover {
@@ -159,9 +159,9 @@ body {
   color: #fff;
   width: 100px;
   height: 32px;
-  border: 1px solid #fff;
   text-align: center;
-  padding-top: 5px;
+  padding-left: 25px;
+  padding-top: 20px;
 }
 
 .button-throw-off:hover {
@@ -624,34 +624,48 @@ body {
 }
 
 .range {
-  width: 287px;
+  display: flex;
+  margin-top: 34px;
+  position: relative;
 }
 
 .catalog-filter-group {
   border: none;
-}
-
-.catalog-filter-group {
+  margin: 0;
   padding: 0;
-  margin-right:
 }
 
 .catalog-filter-group:last-of-type  {
   margin: 0;
   padding: 0;
-  margin-left: 147px;
   margin-right: 70px;
 }
 
-.catalog-filter-title {
-  margin-bottom:
-}
 
 .range-wrapper-inputs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 145px;
+  display: flex;
   height: 48px;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+}
+
+.range-input {
+  background: transparent;
+  color: inherit;
+  padding-right: 80px;
+  width: 143px;
+  box-sizing: border-box;
+  font: inherit;
+  text-align: center;
+}
+
+.range-wrapper-inputs:first-child {
+  border-radius: 4px 0 0 4px;
+  border-right: 1px;
+}
+
+.range-wrapper-inputs:nth-child(2) {
+  border-radius: 0 4px 4px 0;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -663,17 +677,19 @@ body {
 .catalog-filter-label {
   display: flex;
 }
+
 .range-scale {
-  position: relative;
+  position: absolute;
+  top: 80px;
+  width: 287px;
   height: 4px;
-  margin-top: 32px;
-  background-color: #e5e5e5;
+  background: #fff;
 }
 
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: #fff;
+  background: #fff;
   width: 228px;
 }
 
@@ -709,6 +725,12 @@ body {
   right: -8px;
 }
 
+.catalog-buttons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 /* sorting */
 
 .catalog {
@@ -741,12 +763,13 @@ body {
   height: 49px;
   margin-left: 191px;
   margin-right: 78px;
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
   padding-left: 20px;
   background-image: url("../images/catalog/icons/arrow-icon.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right 20px center;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  appearance: none;
 }
 
 .select-control:hover {
