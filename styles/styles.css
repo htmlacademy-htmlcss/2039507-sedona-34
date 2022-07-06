@@ -157,11 +157,10 @@ body {
   line-height: 20px;
   background-color: transparent;
   color: #fff;
-  width: 100px;
-  height: 32px;
+  width: 160px;
+  height: 48px;
   text-align: center;
-  padding-left: 25px;
-  padding-top: 20px;
+  border: none;
 }
 
 .button-throw-off:hover {
@@ -537,7 +536,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px;
 }
 
 .inner-header-title {
@@ -602,6 +601,7 @@ body {
   display: flex;
 }
 
+
 .catalog-filter-group:first-child {
   margin-right: 70px;
 }
@@ -622,6 +622,57 @@ body {
 .catalog-filter-item:not(:last-child) {
   margin-bottom: 15px;
 }
+
+.control {
+  position: relative;
+  padding-left: 40px;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.control:hover .control-mark {
+  background-color: #fff;
+}
+
+.control:focus .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid #83B3D3;
+}
+
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  height: 2px;
+  background-color: #3F5E72;
+  content: "";
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  width: 5px;
+  top: 10px;
+  left: 4px;
+  transform: rotate(45deg);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  width: 10px;
+  top: 9px;
+  right: 4px;
+  transform: rotate(-45deg);
+}
+
 
 .range {
   display: flex;
@@ -650,6 +701,7 @@ body {
 }
 
 .range-input {
+  position: relative;
   background: transparent;
   color: inherit;
   padding-right: 80px;
@@ -657,6 +709,23 @@ body {
   box-sizing: border-box;
   font: inherit;
   text-align: center;
+  border: none;
+}
+
+.range-input-limit-left {
+  position: absolute;
+  right: 160px;
+  top: 12px;
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.range-input-limit-right {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 
 .range-wrapper-inputs:first-child {
@@ -680,17 +749,17 @@ body {
 
 .range-scale {
   position: absolute;
-  top: 80px;
-  width: 287px;
+  top: 75px;
+  width: 288px;
   height: 4px;
-  background: #fff;
+  background-color: #fff;
 }
 
 .range-bar {
   position: absolute;
   height: 4px;
-  background: #fff;
   width: 228px;
+  background-color: #fff;
 }
 
 .range-toggle {
@@ -722,7 +791,7 @@ body {
 
 .toggle-max {
   top: -8px;
-  right: -8px;
+  left: 221px;
 }
 
 .catalog-buttons {
@@ -739,7 +808,6 @@ body {
 }
 
 .sorting-container {
-
   display:flex;
   align-items: flex-end;
   margin: 55px 72px;
