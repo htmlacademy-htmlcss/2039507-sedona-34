@@ -601,7 +601,6 @@ body {
   display: flex;
 }
 
-
 .catalog-filter-group:first-child {
   margin-right: 70px;
 }
@@ -623,10 +622,14 @@ body {
   margin-bottom: 15px;
 }
 
+/* control */
+
 .control {
   position: relative;
   padding-left: 40px;
 }
+
+/* mark */
 
 .control-mark {
   position: absolute;
@@ -639,7 +642,7 @@ body {
 }
 
 .control:hover .control-mark {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .control:focus .control-mark {
@@ -650,6 +653,8 @@ body {
 .control:active .control-mark {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+/* checkbox */
 
 .control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
@@ -671,6 +676,34 @@ body {
   top: 9px;
   right: 4px;
   transform: rotate(-45deg);
+}
+
+/* radio */
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"] + .control-mark:focus,
+.control-input[type="radio"]:checked + .control-mark:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+}
+
+.control-input[type="radio"] + .control-mark:active,
+.control-input[type="radio"]:checked + .control-mark:active {
+  background-color: #fff;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #3F5E72;
+  content: "";
 }
 
 
@@ -753,6 +786,7 @@ body {
   width: 288px;
   height: 4px;
   background-color: #fff;
+  opacity: 0.3;
 }
 
 .range-bar {
@@ -888,8 +922,6 @@ body {
 }
 
 .button-view-icon {
-  width: 16px;
-  height: 14px;
   padding: 17px 16px;
   position: absolute;
   top: -2px;
