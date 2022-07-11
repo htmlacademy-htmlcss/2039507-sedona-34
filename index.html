@@ -348,19 +348,18 @@
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group">
                 <label class="check-in" for="check-in-input">Дата заезда:</label>
-                  <input id="check-in-input" class="check-in-field field" type="date" name="check-in" placeholder="27 апреля 2020">
+                  <input class="check-in-field field" id="check-in-input" type="text" name="check-in" placeholder="27 апреля 2020">
                   <span class="check-in-warning warning">Мы не можем отправить вас в прошлое.</span>
               </p>
 
               <p class="field-group">
                 <label class="check-out" for="check-out-input">Дата выезда:</label>
-                  <input id="check-out-input" class="check-out-field field" type="date" name="check-out" placeholder="1 сентября 2021">
+                  <input class="check-out-field field" id="check-out-input" type="text" name="check-out" placeholder="1 сентября 2021">
                   <span class="check-out-warning warning">На эти даты есть свободные номера. Пока есть.</span>
               </p>
               <div class="modal-quantity">
                 <p class="field-group">
                   <label class="adults">Взрослые:
-
                     <input class="modal-field-left field" type="number" name="number-of-adults" min="1" placeholder="2">
                     <button class="adults-button-min" type="button"></button>
                     <button class="adults-button-max" type="button"></button>
@@ -369,6 +368,11 @@
 
                 <p class="field-group">
                   <label class="children">Дети:
+                    <span class="tooltip">
+                      <button class="tooltip-button" type="button" aria-labelledby="tooltip-labe">
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
                     <button class="children-button-min" type="button"></button>
                     <input class="modal-field-right field" type="number" name="number-of-children" min="1" placeholder="1">
                     <button class="children-button-max" type="button"></button>
