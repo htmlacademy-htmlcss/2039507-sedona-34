@@ -597,6 +597,7 @@ body {
   color: inherit;
 }
 
+
 .breadcrumbs-icon {
   fill: #fff;
 }
@@ -626,6 +627,7 @@ body {
 }
 
 .breadcrumbs-item {
+  position: relative;
   margin-right: 10px;
 }
 
