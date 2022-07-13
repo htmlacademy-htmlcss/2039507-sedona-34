@@ -581,6 +581,12 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 150px;
+}
+
+.breadcrumbs:focus-within {
+  outline: 2px solid #82B3D3;
+  border-radius: 4px;
 }
 
 .breadcrumbs-link {
@@ -632,6 +638,11 @@ body {
   display: flex;
 }
 
+.catalog-filter-group:focus-within {
+  outline: 2px solid #82B3D3;
+  border-radius: 4px;
+}
+
 .catalog-filter-group:first-child {
   margin-right: 66px;
 }
@@ -679,16 +690,19 @@ body {
   background-color: #fff;
 }
 
-.control-input:hover .control-mark {
+.control-mark[type="checkbox"]:hover,
+.control-mark[type="radio"]:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control-input:focus .control-mark {
+.control-mark[type="checkbox"]:focus,
+.control-mark[type="radio"]:hover  {
   outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
-.control-input:active .control-mark {
+.control-mark[type="checkbox"]:active,
+.control-mark[type="radio"]:hover {
   background:rgba(255, 255, 255, 0.3);
 }
 
@@ -736,6 +750,8 @@ body {
 .control-input[type="radio"] + .control-mark:focus {
   border: 3px solid #83B3D3;
 }
+
+/* range */
 
 .range {
   display: flex;
@@ -1151,6 +1167,7 @@ body {
   list-style-type: none;
 }
 
+
 .pagination-item {
   border-radius: 4px;
   text-align: center;
@@ -1212,17 +1229,11 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-}
-
-.select-control-pagination::after {
-  content: "";
-  position: absolute;
+  appearance: none;
   background-image: url("../images/catalog/icons/arrow-icon.svg");
-  width: 12px;
-  height: 7px;
-  top: 1px;
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 }
-
 
 .select-control-pagination::-webkit-outer-spin-button,
 .select-control-pagination::-webkit-inner-spin-button {
@@ -1286,7 +1297,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  /* display: none; */
+  display: none;
 }
 
 .modal {
@@ -1732,20 +1743,20 @@ body {
   margin-right: 27px;
 }
 
-.footer-social-icon {
-  color: #83B3D3;
+.footer-social-link {
+  fill: #83B3D3;
 }
 
-.footer-social-icon:hover {
-  color: #68A2CA;
+.footer-social-link:hover {
+  fill: #68A2CA;
 }
 
-.footer-social-icon:focus {
-  color: #68A2CA;
+.footer-social-link:focus {
+  fill: #68A2CA;
 }
 
-.footer-social-icon:active {
-  color: rgba(104, 162, 202, 0.3);
+.footer-social-link:active {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .phone {
